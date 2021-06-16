@@ -1,0 +1,211 @@
+// fonts color
+
+$white: #ffff
+$green: #00af47
+$bluetext: #3376bc
+$pink: #f5f5f5
+.white 
+  color: $white
+.green
+  color: $green
+.bgreen
+  display: block
+  border-radius: 10px
+  width: 10px
+  height: 10px
+  background: $green
+  float: left
+  margin: 7px 5px 0px 0px
+.bluetext
+  color: $bluetext !important
+.b-blue
+  background: $bluetext
+.black 
+  color: black
+.radius
+  border-radius: 10px !important
+.button--sm
+  @include rowcenter
+  width: 290px
+  height: 50px
+  border: 2px dashed $bluetext
+  border-radius: 10px
+  span
+    color: $bluetext
+.button  
+  @include rowcenter
+  // width: 260px
+  // height: 60px
+  background: url('../img/bluebackground.jpg')
+  background-size: cover
+  cursor: pointer
+  span
+    color: $white
+    font-family: ProximaNova-Bold
+  span:nth-child(2)
+    font-family: ProximaNova
+.button-img 
+  background: url('../img/bluebackground.jpg')
+  background-size: cover
+  cursor: pointer
+  span
+    color: $white
+  > div:nth-child(1)
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 30%
+  > div:nth-child(2)
+      display: flex
+      justify-content: center
+      flex-direction: column
+      p:nth-child(1)
+        font-family: ProximaNova-Bold
+        font-size: 14px
+      p:nth-child(2)
+        font-family: ProximaNova
+        font-size: 13px
+        color: #ffffffaa
+.whats-up
+    height: 35px
+    width: 140px
+    background: white
+    padding: 5px
+    border: 1px solid #dddddd
+    cursor: pointer
+.button--dashed
+  @include rowcenter
+  width: 260px
+  height: 60px
+  border: 2px dashed $bluetext
+  color: $bluetext
+.bs
+  @include rowcenter
+  background: #efeeee
+  min-height: 50px
+  padding: 2%
+  span
+    color: #b4b4b4
+.button--dashed--gray
+  @include rowcenter
+  width: 260px
+  height: 60px
+  border: 2px dashed #ccc
+  cursor: pointer
+  a
+    color: #7c8189
+.span-number
+  color: gray
+  padding: 0px 0px 5px 0px
+  font-family: ProximaNova
+.dangerous
+  text-transform: uppercase
+  color: #e5453d
+  font-family: ProximaNova-Extrabld
+  font-size: 21px
+  @media screen and ( max-width: 991.92px )
+    font-size: 15px
+.buttonempty
+  padding: 1em 3em
+  cursor: pointer
+  @media screen and ( max-width: 991.92px )
+    padding: 1em 2em
+
+  // background: #6464645d
+.littleimg
+  width: 80px
+  height: 80px
+  @media screen and (min-width: 992px )
+    width: 150px
+    height: 150px
+.doublebutton
+  min-width: 260px
+  min-height: 60px
+  border: 2px dashed $bluetext
+  padding: 10px
+  cursor: pointer
+.relative
+  position: relative
+.dashed
+  border: 2px dashed #ccc
+.pphone
+  padding: 0 20px !important
+.input-group-text
+  background-color: transparent !important
+.imgright
+  width: 400px
+  height: 300px
+  object-fit: cover
+.form
+  display: flex
+  width: 50%
+  flex-direction: column
+  justify-content: space-evenly
+  @media screen and ( max-width: 991.98px )
+    width: 100%
+.vkyrse
+  > div
+    width: 70%
+    margin: 40px 0px 0px 35px
+  h4
+    padding: 0px 0px 20px 0px
+    font-family: ProximaNova-Bold
+    font-size: 29px
+    @media screen and ( max-width: 991.98px  )
+      padding: 0px 0px 10px 0px
+  h4 ~ p
+    font-size: 20px
+  img
+    @media screen and ( max-width: 991.98px  )
+      margin: 0 auto
+.caveat
+  font-family: Caveat
+  font-size: 21px
+.b-blue
+  @include center
+  width: 100%
+  padding: 10px !important
+  color: white
+  font-family: ProximaNova-Bold
+  font-size: 21px
+  
+
+.progress
+  height: 40px
+  border-radius: 3rem
+  width: 800px
+
+.progress-bar-striped
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent)
+  background-size: 30px 30px
+
+@keyframes progress-bar-stripes
+  from
+    background-position: 0 0
+  to
+    background-position: 30px 0
+
+
+.procent
+  width: 10%
+.procent1
+  width: 20%
+.procent2
+  width: 30%
+.procent3
+  width: 40%
+.procent4
+  width: 50%
+.procent5
+  width: 60%
+.procent6
+  width: 70%
+.procent7
+  width: 80%
+.procent8
+  width: 90%
+.procent9
+  width: 100%
+
+.none 
+  display: none !important

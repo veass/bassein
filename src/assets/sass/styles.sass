@@ -1,0 +1,241 @@
+@import 'mixins'
+@import 'variables'
+@import '_header'
+@import 'burger'
+@import '_first5'
+@import '_second5'
+@import '_third'
+@import '_footer' 
+@import '_yslygi' 
+@import '_fonts' 
+
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+
+// breakpoints
+// $minwidth: 320px
+// $mw: 1920
+// $mw12: $mw+12
+// $mw1: 480px
+// $mw2: 479.98px
+// $mw3: 767.98px
+// $mw4: 992.98px
+// $mw5: 1200px
+// fonts
+
+// $fontfamily:''
+  
+*,html
+  box-sizing: border-box
+html, body 
+  min-width: 400px
+  margin: 0
+html
+  height: auto
+  width: 100%
+.container, .container-my
+  // border-left: 1px solid green
+  // border-right: 1px solid green
+body  
+  height: auto
+  // background: #eeeeee73 !important
+  // background: url('../img/full.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  // font-family: 'Roboto', sans-serif !important
+img 
+  max-width: 100%
+  height: auto
+  width: auto\9 
+h1, h5, h6, p ,span, input
+  margin: 0 !important
+  padding: 0 !important 
+// p 
+//   margin: 0 !important    
+ul
+  padding: 0px 0px 0px 0px
+h3
+  font-family: ProximaNova-Semi
+  font-size: 36px
+h2
+  font-family: ProximaNova-Extrabld
+  @include adaptiv-font(43, 21)
+  text-align: center
+  span
+    color: #3376bc
+b 
+  font-family: ProximaNova-Extrabld
+h4
+  font-size: 18px
+li 
+  list-style-type: none
+a
+  color: inherit 
+  text-decoration: none !important
+a:focus
+  // color: $fiolet
+.header-row:nth-hild(2) a:hover
+  color: $bluetext !important
+  text-decoration: none 
+
+p
+  font-family: 'ProximaNova' 
+.button:hover
+  // background: $fiolet1
+.imgabsolute
+  position: absolute
+  top: 0
+  left: 0
+  height: inherit
+  width: 100%
+  object-fit: cover
+
+.circle
+  width: 13px
+  height: 13px
+  border-radius: 50%
+.circle--green
+  background-color: $green
+.container-my
+  width: 100%
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+  @media screen and ( min-width: 1400px )
+    max-width: 1320px 
+  @media screen and ( min-width: 1700px )
+    max-width: 1620px 
+  @media screen and (min-width: 1200px)
+    max-width: 1140px 
+  @media screen and (min-width: 992px)
+    max-width: 960px 
+  @media screen and (min-width: 768px)
+    max-width: 720px 
+  @media screen and (min-width: 576px)
+    max-width: 540px 
+header, footer, section
+  max-width: 1920px
+  margin: 0 auto
+.container
+  @media screen and ( min-width: 1400px )
+    max-width: 1200px !important
+  @media screen and ( min-width: 1700px)
+    max-width: 1460px !important
+// .mycontainer
+//   margin: 0 auto
+//   padding: 0px 15px
+// @media screen and (max-width: 575.98px)
+//   .mycontainer
+//     max-width: 100%
+// @media screen and (min-width: 576px)
+//   .mycontainer
+//     max-width: 540px
+// @media screen and (min-width: 768px)
+//   .mycontainer
+//     max-width: 720px
+// @media screen and (min-width: 992px)
+//   .wrapper
+//     padding-left: 20%
+//   .mycontainer
+//     max-width: 960px
+// @media screen and (min-width: 1200px)
+//   .mycontainer  
+//     max-width: 1140px
+// @media screen and (min-width: 1440px)
+//   .mycontainer  
+//     max-width: 1290px
+// @media screen and (min-width: 1680px)
+//   .mycontainer  
+//     max-width: 1500px
+#section1
+  background: url(../img/section1.jpg)
+  background-repeat: no-repeat
+  position: relative
+  background-size: cover
+  @media screen and ( max-width: 991.98px )
+    background-size: cover
+    background-position: center
+#section2
+  background: url(../img/section3.webp)
+  background-repeat: no-repeat
+  position: relative
+  background-size: cover
+  @media screen and ( max-width: 991.98px )
+    background-size: cover
+    background-position: center
+#section3
+  background: url(../img/section4.webp)
+  background-repeat: no-repeat
+  position: relative
+  background-size: cover
+  @media screen and ( max-width: 991.98px )
+    background-size: cover
+    background-position: center
+.backgroundsection
+  background-repeat: no-repeat
+  position: relative
+  @media screen and ( max-width: 991.98px )
+    background-size: cover
+    background-position: center
+#green1
+  position: absolute
+  top: 20%
+  right: 0%
+  width: 18vw
+  @media screen and ( max-width: 1500px )
+    width: 10vw
+    top: 30%
+  @media screen and ( max-width: 900px )
+    display: none
+#green2
+  position: absolute
+  top: 30%
+  left: 0%
+  @media screen and ( max-width: 1500px )
+    width: 12vw
+    top: 30%
+  @media screen and ( max-width: 900px )
+    display: none
+#green3
+  position: absolute
+  top: 15%
+  right: 0
+  margin-right: -22%
+  @media screen and ( max-width: 1919px )
+    display: none
+  // transform: translate(-50%, 50%)   
+#green4
+  position: absolute
+  top: 15%
+  left: 0
+  @media screen and ( max-width: 1919px )
+    display: none
+#green5
+  position: absolute
+  top: 15%
+  right: 0
+  @media screen and ( max-width: 1919px )
+    display: none
+
+
+
+
+.link-hover-solid a 
+  display: inline-block
+  color: #76431f
+  line-height: 1
+  text-decoration: none
+  cursor: pointer
+.link-hover-solid a:after 
+    background-color: $bluetext
+    display: block
+    content: ""
+    height: 3px
+    width: 0%
+    -webkit-transition: width .3s ease-in-out
+    -moz--transition: width .3s ease-in-out
+    transition: width .3s ease-in-out
+.link-hover-solid a:hover:after,
+.link-hover-solid a:focus:after 
+    width: 100%

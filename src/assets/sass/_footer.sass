@@ -1,0 +1,160 @@
+footer
+  background: rgba(245, 245, 245, 1);
+  padding: 40px 0px 60px 0px
+.footer-row
+  > div:nth-child(1)
+    .header-logo 
+    .header-info
+      @media screen and ( max-width: 991.98px )
+        width: 50%
+        text-align: center
+        margin: 20px auto
+    .header-copyright 
+    @media screen and ( max-width: 991.98px )
+      display: flex
+      flex-direction: column
+      align-items: center
+  > div:nth-child(2)
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      @media screen and ( max-width: 991.98px )
+        align-items: center
+        ul
+          display: flex 
+          flex-direction: column 
+          justify-content: center 
+          align-items: center
+  > div:nth-child(3)
+      display: flex
+      flex-direction: column
+      align-items: center
+      @media screen and ( max-width: 991.98px )
+        justify-content: center
+        ul
+          display: flex 
+          flex-direction: column 
+          justify-content: center 
+          align-items: center
+  > div:nth-child(4)
+      @media screen and ( max-width: 991.98px )
+        display: flex
+        flex-direction: column
+        align-items: center
+        ul
+          display: flex 
+          flex-direction: column 
+          justify-content: center 
+          align-items: center
+  ul > li > a
+    color: gray
+.firstli
+  font-family: ProximaNova-Bold
+  font-size: 20px
+.firstli:nth-child(3)
+  font-size: 23px
+
+
+  ///import css-variables from 
+
+.modalload
+  .modal-content
+    background: url("../img/modal.jpg")
+    background-size: cover
+    background-position: center
+  .modal-body
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: center
+    height: 40vh
+    // background:  url('../img/modal.jpg')
+    background-position: center
+    img
+      width: 50px
+      margin: 0 auto
+    span
+      display: block
+      width: auto
+      font-family: ProximaNova-Bold
+      @include adaptiv-font(40, 20)
+.modalchat
+  .model-dialog
+    background: url('../img/modal2.jpg')
+    background-size: cover
+    background-position: bottom
+    width: 80vw !important
+    margin: 50px auto
+    @media (min-width: 576px)
+      width: 80vw !important
+    .modal-content
+      background-color: transparent
+      max-width: auto !important
+  .modal-body
+    padding: 20px
+    @media (min-width: 1400px) 
+      padding: 50px
+  .bestservice-elem:nth-child(2)
+    background-color: transparent
+    >h2
+    >b
+      @include adaptiv-font(20, 15)
+      text-align: center
+      display: block
+      margin: 0 auto
+    >p
+      margin: 3rem 0px 0px 0px !important
+      color: #9d9d9d
+      text-align: center
+      @media screen and ( max-width: 991.98px )
+        margin: 1rem 0px 0px 0px !important
+        
+    p
+      @include adaptiv-font(20, 15)
+    .form
+      width: 100%
+      align-items: center
+      >div
+        width: 70%
+        margin: 20px 0px 0px 0px !important
+        height: 60px
+        @media screen and ( max-width: 991.98px )
+          width: 100%
+
+
+.modalchat1
+  .moddialog
+    margin: 50px auto
+  .modal-content
+    background: url('../img/modal3.jpg')
+    background-size: cover
+    background-position: center
+  .modal-body
+    padding: 20px
+    @media (min-width: 1400px) 
+      padding: 50px
+  .bestservice-elem
+    width: 100%
+    >h2
+    >b
+      @include adaptiv-font(20, 15)
+      text-align: center
+      display: block
+      margin: 0 auto
+    >p
+      margin: 3rem 0px 0px 0px !important
+      color: #9d9d9d
+      text-align: center
+      @media screen and ( max-width: 991.98px )
+        margin: 1rem 0px 0px 0px !important
+    p
+      @include adaptiv-font(20, 15)
+    .form
+      width: 100%
+      align-items: center
+      >div
+        width: 70%
+        margin: 20px 0px 0px 0px !important
+        height: 60px
+        @media screen and ( max-width: 991.98px )
+          width: 100%

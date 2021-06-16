@@ -1,0 +1,848 @@
+// Cтили первых пяти блоков
+// Стили первого блока
+.main
+  padding: 30px 0px 100px 0px
+  @media screen and ( max-width: 991px )
+    padding: 0px 0px 0px 0px
+.container
+.main-row
+.row
+.main-info
+  width: 60%
+  @media screen and ( max-width: 991.98px )
+    width: 100%
+  &__top
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 15px 0px 30px 0px
+    @media screen and ( max-width: 500px )
+      align-items: center
+    h1
+      // font-size: 1.5rem
+      // font-size: 46px
+      @include adaptiv-font(46, 21)
+      font-family: ProximaNova-Extrabld
+    p
+      font-family: ProximaNova
+      // font-size: 20px
+      @include adaptiv-font(20, 16)     
+  &__down
+    position: relative
+.main-info__card
+  padding: 30px 45px
+  background: white
+  p:nth-child(1)
+    font-family: ProximaNova
+    @include adaptiv-font(26, 16)
+    @media screen and ( max-width: 991.98px)
+      text-align: center
+  p:nth-child(2)
+    font-family: ProximaNova
+    @include adaptiv-font(16, 14)
+    @media screen and ( max-width: 991.98px)
+      text-align: center
+  .form .form-group
+    @media screen and ( max-width: 991.98px )
+      margin: 20px 0px 0px 0px
+.rightimg
+  display: flex
+  padding: 25px 0px 0px 0px
+  img
+    width: 40px
+    height: 30px
+    margin: 0px 0px 0px 10px
+  p
+.leftimg 
+  display: flex
+  margin: 10px 0px 0px 0px
+  @media screen and ( max-width: 991.98px)
+    justify-content: center
+  img
+    width: 20px
+    height: 20px
+    margin: 0px 10px 0px 0px
+  p
+    font-size: 14px
+.form-elem
+  margin: 20px 0px 0px 0px
+.input-group
+  input
+    height: 60px !important
+.input-group-lg
+  height: 60px
+.form-check-input
+  left: 0px
+  top: 10px
+.main-features
+  width: 40%
+  @media screen and ( max-width: 991.98px )
+    width: 100%
+    padding: 45px 0 0 0
+  &__elem1
+
+  &__elem2
+
+  &__elem3
+
+  &__elem4
+
+.main-features .wrap
+  justify-content: space-evenly
+  @media screen and ( min-width: 992px )
+    padding: 50px 0px 0px 0px
+.features
+  background: white
+  width: 170px
+  height: 140px
+  margin: 0 auto
+  position: relative
+  justify-content: flex-end
+  padding: 0px 0px 10px 0px
+  span
+    font-family: ProximaNova-Extrabld
+    @include adaptiv-font(16, 14)
+    text-align: center
+  img
+    position: absolute
+    top: 0
+    left: 0
+input.form-control::placeholder
+  color: #ccc
+  font-family: 'ProximaNova'
+  @include adaptiv-font(24, 18)
+.dynamicplacholder
+  @include adaptiv-font(20, 16)
+  font-family: 'ProximaNova'
+  color: #ccc
+.main-features__elem
+  margin: 10px 0px 0px 0px
+  > div
+    width: 170px
+    height: 140px
+  img
+    margin: -40px 0 0 0
+    max-width: none
+.main-features__elem2 img
+  margin: -27px 0 0 40px
+.main-features__elem3 img
+  margin-left: -65px
+  margin-top: -50px
+
+.buttons
+  display: flex
+  flex-direction: row
+  border: 1px solid $bluetext
+  height: 60px
+  margin: 20px 0px 0px 0px
+  box-shadow: 0 7px 0 0 #3e80c5
+  img
+    width: 20px
+    height: 20px
+  div:nth-child(1)
+    width: 20%
+  span:nth-child(1)
+    font-family: ProximaNova-Bold
+    font-size: 14px
+  span:nth-child(2)
+    font-family: ProximaNova
+    font-size: 13px
+label
+  font-family: ProximaNova-T
+  font-size: 12px
+  font-weight: 600
+
+
+
+/*Стили второго блока*/
+.test
+  padding: 0px 0px 100px 0px
+  background: url('../img/section2.jpg')
+  @media screen and ( max-width: 991.98px )
+    padding: 65px 0px 70px 0px
+.r12c
+  display: flex
+  justify-content: center
+  align-items: center 
+  padding: 50px 0px 40px 0px
+  @media screen and ( max-width: 991.98px )
+    padding: 40px 0px 50px 0px
+  div
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    img
+      width: 100px
+  p
+    font-size: 18px
+    width: 250px
+  &__elem
+    width: 30%
+    align-items: center
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+      justify-content: space-between
+      p
+        width: 60%
+.kviz
+  padding: 10px
+  background: white
+  .dashed
+    padding: 50px 50px 100px 50px
+    @media screen and ( max-width: 991.98px )
+      padding: 20px
+.wrap-manager
+  background: #f5f5f5
+  padding: 0px 40px 0px 40px
+.igor
+  height: 300px
+  object-fit: cover
+  @media screen and ( min-width: 992px ) and ( max-width: 1600px)
+    height: auto
+.igor ~ span
+  border-bottom-right-radius: 10px !important
+  border-bottom-left-radius: 10px !important
+.igor ~ span ~ div
+  margin: 10px 0px 10px 0px 
+  >p
+    font-family: ProximaNova-Bold
+    font-size: 16px
+.igor ~ span ~ div ~ p
+  font-family: ProximaNova-Semi
+  font-size: 17px
+.igor ~ span ~ div ~ p ~ div
+  margin: 50px 0px 50px 0px
+  >div:nth-child(1)
+    width: 30%
+    div
+      height: 2px
+      width: 60px
+      border-top: 2px solid $bluetext
+  >div:nth-child(2)
+    width: 70%
+  p
+    font-size: 17px
+      
+.wrap-mager__down
+  position: relative
+  padding: 25px 0px 0px 0px
+  >p
+    font-size: 21px !important
+  p
+    font-size: 18px
+    span
+      font-family: ProximaNova-Bold  
+      font-size: 18px
+.quiz > p:nth-child(1)
+  text-align: center
+.quiz
+  display: none
+  min-height: 600px
+  @media screen and ( max-width: 991.98px )
+    min-height: auto
+.kviz__left
+  width: 30%
+.kviz__right
+  width: 70%
+  padding: 0px 50px
+  @media screen and ( max-width: 991.98px )
+    width: 100%
+    padding: 0px
+  .progress
+    height: 50px
+    width: 100%
+    margin: 0px 0px 50px 0px
+    border-radius: 3rem
+  p:nth-child(2)
+    width: 50%
+    text-align: center
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+  p:nth-child(3)
+    width: 50%
+    text-align: center
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+  .evenly
+    display: flex
+    justify-content: space-evenly
+    margin: 90px 0px 0px 0px
+    @media screen and ( max-width: 991.98px )
+      margin: 20px 0px 0px 0px
+    .button
+      // width: 340px
+      // height: 80px
+      font-family: ProximaNova-Bold
+      padding: 1em 3em
+      box-shadow: 0 7px 0 0 #3e80c5
+    .buttonempty
+      background: #f5f5f5
+input[type="radio"]
+  width: 45px
+  height: 45px
+  position: absolute
+  top: -50%
+  left: 50%
+  transform: translate(-50%,50%)
+.progress-bar
+.types-bassein
+  display: flex
+  justify-content: space-evenly
+  flex-wrap: wrap
+  width: 100%
+  padding: 60px 0px 0px 0px
+  
+  @media screen and ( max-width: 991.98px )
+    padding: 20px 0px 0px 0px
+.type-bassein
+  width: 45%
+  opacity: 0.6
+  @media screen and ( min-width: 992px )
+    width: 30%
+  span
+    font-family: ProximaNova-Bold
+.type-bassein.active
+  opacity: 1
+.wrap-img
+  height: 145px
+  width: 100%
+  position: relative
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
+    border-radius: 10px
+  input[type="radio"]
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transform: inherit
+#step1 .wrap-img
+  @media screen and ( min-width: 992px )
+    height: 340px
+#step9, #step10
+  input[type="radio"]
+    position: static
+    top: auto
+    left: auto
+    transform: inherit
+  .input-group, .input-group-text
+    height: 60px
+    background: transparent
+    .circle-button
+      position: static
+      margin-top: auto
+      top: inherit
+      left: inherit
+      transform: inherit
+      .second-circle
+  .input-group
+    margin: 20px 0px 0px 0px !important
+    span
+      height: 60px
+      text-align: center
+      @include adaptiv-font(20, 14)
+      line-height: 2.5
+      @media screen and ( max-width: 991.98px )
+        line-height: 1.5
+        width: 70%
+  .input-group-prepend 
+    @media screen and ( max-width: 991.98px )
+      margin: 0px 20px 0px 0px
+      .circle-button
+        width: 20px
+        height: 20px
+        @media screen and ( max-width: 991.98px )
+          margin: 0px 0px 0px 0px
+        .second-circle
+          width: 10px
+          height: 10px
+#step11
+  .types-bassein > div
+    margin: 40px 0px 0px 0px !important
+  .whats-up, .button
+    width: 240px
+    height: 60px
+  .types-bassein
+    width: 80%
+    padding: 0px 0px 80px 0px
+  .input-group
+    width: 240px
+  .kviz
+    position: relative
+.step11
+  @media screen and ( max-width: 991.98px )
+    padding: 0 0 0 20%
+#step12
+  background: url('../img/garanty.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  position: relative
+  .kviz
+    background: transparent
+  .calling-elems
+    padding: 90px
+    background: transparent
+    @media screen and ( max-width: 991.98px )
+      padding: 10px
+  .main-info__card
+    padding: 40px
+    width: 60%
+    margin: 40px 0px 0px 0px
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+      padding: 0px 0px 0px 0px
+      margin: 20px 0px 0px 0px
+  .left
+    width: 60%
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+    >p:nth-child(1)
+      @include adaptiv-font(40, 20)
+    >p:nth-child(2)
+      @include adaptiv-font(25, 16)
+      @media screen and ( max-width: 991.98px )
+        width: 100%
+  .right
+    width: 40%
+    @media screen and ( max-width: 991.98px )
+      width: 70%
+      margin: auto
+    img
+      margin: 0 auto
+  .excepted
+    b:nth-child(1)
+      font-size: 20px
+    b:nth-child(2)
+      font-size: 20px
+    p:nth-child(3)
+.active
+  display: block !important
+.mas1
+  position: absolute
+  right: 0
+  bottom: 10%
+  @media screen and ( max-width: 991.98px  )
+    display: none
+.wrap-img ~ div
+  text-align: center
+  position: relative
+  padding: 30px 0px
+.last
+  display: none
+.circle-button
+  width: 45px
+  height: 45px
+  margin-left: auto
+  margin-right: auto
+  margin-top: -22px
+  border-radius: 25px
+  // background: #5f5fff
+  background: $white
+  position: absolute
+  top: -25px
+  left: 50%
+  transform: translate(-50%, 50%)
+  .second-circle
+    width: 20px
+    height: 20px
+    border-radius: 12px
+    background: gray
+.circle-button.actives
+  background: #5f5fff
+  .second-circle
+    background: white
+.type1
+
+.type2
+
+.type3
+
+
+/*Стили третьего блока*/
+.mistakes
+  // background: url('../img/d1.jpg')
+  padding: 0px 0px 50px 0px
+  h2
+    margin-top: 20px
+    margin-bottom: 45px
+    margin-left: auto
+    margin-right: auto
+    width: 70%
+    display: block
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+      margin-bottom: 25px
+  h2 ~ p 
+    @include adaptiv-font(20, 14)
+    margin: 0 auto !important
+    width: 50%
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+.mistakes-cards
+  padding: 80px 0px 0px 0px
+  height: 950px
+  @media screen and ( max-width: 992px )
+    height: auto
+    justify-content: space-evenly
+    padding: 40px 0px 0px 0px
+    >div
+      margin: 0px 0px 25px 0px
+  > div:nth-child(1)
+    > div
+      @media screen and ( min-width: 992px )
+        width: 260px 
+  > div:nth-child(2)
+    @media screen and ( min-width: 992px )
+      justify-content: flex-end
+      display: flex
+    > div
+      @media screen and ( min-width: 992px )
+        height: 450px
+        width: 260px 
+  > div:nth-child(3)
+    @media screen and ( min-width: 992px )
+      justify-content: flex-end
+      display: flex
+    > div
+      @media screen and ( min-width: 992px )
+        height: 450px
+        width: 260px 
+  > div:nth-child(4)
+    > div
+      @media screen and ( min-width: 992px )
+        width: 260px 
+  .card__img
+    position: absolute
+    z-index: 20
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    left: 100%
+    top: 50%
+    width: 3.5vw
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    @media screen and ( max-width: 991.98px )
+      width: 15.5vw
+.mistakes-card
+  width: 300px
+  height: 330px
+  background: white
+  margin: auto
+  padding: 25px
+  position: relative
+  max-width: 100%
+  @media screen and ( min-width: 992px )
+    width: auto
+    height: auto
+  .dangerous
+    margin: 20px 0px !important
+  .span-number
+    @include adaptiv-font(43, 27)
+  h3
+    font-family: ProximaNova-Extrabld
+    text-transform: uppercase
+    @include adaptiv-font(21, 15)
+  h3 ~ p 
+    font-size: 14px
+    font-family: ProximaNova
+  ul
+    margin: 0
+    >li
+      font-size: 14px
+      b
+        font-size: 17px
+.summa-mistakes
+  position: relative
+  background: url(../img/sddd.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  margin: 30px 0px 0px 0px
+  @media screen and ( max-width: 991.98px )
+    background-size: cover
+    background-position: top
+  >img
+    position: absolute
+    // top: -24%
+    // left: -21%
+    bottom: 0
+    right: 50%
+    width: 55vw
+  div:nth-child(2)
+    padding: 100px 0px 70px 0px
+    @media screen and ( max-width: 991.98px )
+      padding: 50px 0px 50px 0px
+    // @media screen and ( max-width: 991.98px )
+    //   background: url('../img/12.jpg')
+    h3
+      width: 65%
+      @include adaptiv-font(40, 26)
+      font-family: ProximaNova-Semi
+      b
+        @include adaptiv-font(40, 26)
+      @media screen and ( max-width: 991.98px )
+        width: 80%
+        text-align: center
+        margin: 0 auto !important
+    .button
+      margin: 30px 0px 0px 0px
+      width: 410px
+      height: 110px
+      @include adaptiv-font(17, 14)
+      font-family: ProximaNova-Bold
+      box-shadow: 0 7px 0 0 #3e80c5
+      @media screen and ( max-width: 991px )
+        margin-left: auto
+        margin-right: auto
+        margin-top: 0
+        width: 340px
+        height: 90px
+  .button--sm
+    margin: 0px 0px 50px 0px
+    font-family: ProximaNova-Bold
+    font-size: 20px
+    @media screen and ( max-width: 991.98px )
+      display: none
+
+
+
+// Стили четвертого блока
+.systems 
+  // background: gray
+  padding: 0px 0px 50px 0px
+  h2
+    width: 70%
+    margin: 20px auto
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+.system-cards 
+  justify-content: space-evenly
+  padding: 30px 0px 50px 0px
+  @media screen and ( max-width: 991.98px )
+    padding: 0px 0px 0px 0px
+.system-cards__elem
+  width: 30%
+  padding: 6px
+  background: white
+  @media screen and ( max-width: 991.98px )
+    width: 100%
+    margin: 15px 0px 0px 0px
+  @media screen and ( min-width: 992px )
+    &:nth-child(4)
+      margin-top: 15px
+      width: 40%
+      height: 300px
+    &:nth-child(5)
+      margin-top: 15px
+      width: 40%
+      height: 300px
+  .dashed
+    justify-content: space-evenly
+    display: flex
+    height: 100%
+    padding: 30px 30px 70px 30px
+    border-radius: 10px
+    @media screen and ( max-width: 991.97px )
+      padding: 30px 30px 30px 30px 
+    div:nth-child(1)
+      width: 60%
+    div:nth-child(2)
+      img
+        height: 160px
+        width: 150px
+        object-fit: contain
+.system-cards__elem:nth-child(4)
+  .dashed div:nth-child(1)
+    width: 45%
+    @media screen and ( max-width: 991.97px )
+      width: 80%
+.system-cards__elem:nth-child(5)
+  .dashed div:nth-child(1)
+    width: 45%
+    @media screen and ( max-width: 991.97px )
+      width: 80%
+.system-cards__elem
+  .dashed div:nth-child(1)
+    @media screen and ( max-width: 991.97px )
+      width: 80%
+
+
+
+
+
+// Стили пятого блока
+.portfolio 
+  > h2
+    @media screen and ( max-width: 991.98px )
+      margin: 0 auto
+      display: block
+      width: 60%
+  h2 ~ p
+    margin: 20px auto 80px auto !important
+    font-size: 21px
+    width: 60%
+    text-align: center
+    @media screen and ( max-width: 991.98px )
+      margin: 20px auto 0px auto !important
+  h2:nth-child(2)
+    padding: 0px 15px
+  .container
+    padding: 50px 0
+    position: relative
+  .button--dashed
+    color: $bluetext
+    font-size: 20px
+    font-family: ProximaNova
+    width: 360px
+    height: 50px
+    margin: 0px auto 45px auto
+    @media screen and ( max-width: 992px )
+      margin: 0px auto 30px auto
+    @media screen and ( max-width: 992px )
+      width: 60%
+      padding: 10px
+      height: auto
+.portfolio-card
+  width: 80%
+  background: $white
+  margin: 50px 0px 0px 0px
+  -webkit-box-shadow: 0px 0px 34px 10px rgba(199,193,199,1)
+  -moz-box-shadow: 0px 0px 34px 10px rgba(199,193,199,1)
+  box-shadow: 0px 0px 34px 10px rgba(199,193,199,1)
+  .right
+    width: 100%
+    padding: 25px
+    flex-direction: column
+    @media screen and ( min-width: 992px )
+      width: 60%
+      padding: 25px 50px
+      flex-direction: row
+    h2
+      font-family: ProximaNova-Bold
+      @include adaptiv-font(28, 21)
+      text-align: left
+    .button
+      height: 80px
+      width: 320px
+      margin: 50px auto 40px auto
+      font-family: ProximaNova-Bold
+      box-shadow: 0 7px 0 0 #3e80c5
+      @media screen and ( max-width: 991.98px )
+        width: auto
+        padding: 10px
+    .leftimg
+      @media screen and ( max-width: 991.98px )
+        justify-content: start
+        margin: 20px 0px 0px 0px
+  .left
+    width: 100% 
+    @media screen and ( min-width: 992px )
+      width: 40%
+  .top 
+    height: 75%
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+    @media screen and ( max-width: 991.98px )
+      height: 50vh
+    img
+      height: 100%
+      object-fit: cover
+      border-top-left-radius: 10px
+      border-top-right-radius: 10px
+  .down 
+    height: 25%
+    padding: 25px
+    background:  $white
+    @media screen and ( max-width: 991.98px )
+      transform: translate(0, -20%)
+    .row
+      height: 100%
+      align-items: center
+    @media screen and ( min-width: 992px )
+      border-radius: 0px !important
+  .button--dashed--gray
+    @media screen and ( max-width: 992px )
+      margin: auto
+.card-info 
+  margin: 30px 0px 0px 0px
+  h3
+    font-family: ProximaNova-Bold
+    @include adaptiv-font(21, 21)
+  li
+    font-size: 16px
+    font-family: ProximaNova
+    line-height: 2
+    @media screen and ( max-width: 992px )
+      line-height: 1.5
+  .col-lg-6 > ul
+    max-height: 190px
+    overflow: hidden
+.owl-carousel-second .owl-item img
+  width: auto !important
+  @media screen and ( max-width: 992px )
+    display: block
+    margin: 0 auto
+.owl-carousel .owl-stage-outer
+  // overflow: inherit !important
+.owl-carousel .owl-stage-outer 
+  padding: 50px 0px
+.owl-nav
+  position: absolute
+  top: 50%
+  left: 0
+  transform: translate(0%, -50%)
+  width: 80vw
+  display: flex
+  justify-content: space-between
+  @media screen and ( min-width: 401px ) and ( max-width: 991.98px  )
+    width: 80vw
+  @media screen and ( max-width: 400px  )
+    width: 100vw
+  .owl-prev span
+    width: 10vh
+    height: 10vh
+    display: block
+    font-size: 25vh
+    line-height: 0
+    margin: 2vh 0 0 2vh !important
+  .owl-next span
+    width: 10vh
+    height: 10vh
+    display: block
+    font-size: 25vh
+    line-height: 0
+    margin: 2vh 0 0 2vh !important
+  button
+    width: 13vh
+    height: 13vh
+    background: $bluetext !important
+    border-radius: 50% !important
+    opacity: 0.6
+.owl-theme .owl-nav [class*=owl-]:hover
+  background: transparent !important
+  color: black !important
+  border: none
+.first-nav 
+  position: absolute
+  display: flex
+  top: 50%
+  left: 0
+  transform: translate(0%, 0%)
+  width: 100%
+  justify-content: space-between
+.first-prev 
+  font-size: 8rem
+.first-next 
+  font-size: 8rem
+  transform: translate(-200%, 0px)

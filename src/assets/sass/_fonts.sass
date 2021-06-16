@@ -1,0 +1,36 @@
+$maxWidth: 1920
+@mixin adaptiv-font($pcSize, $mobSize) 
+ $addSize: $pcSize - $mobSize
+ $maxWidth: $maxWidth - 400
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 400px) / #{$maxWidth})) !important
+
+//       UPD упрощенная формула (медиа запрос не нужен):
+// font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)))
+
+// @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+// @import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+@font-face 
+  font-family: ProximaNova
+  src: url(../fonts/ProximaNova-Regular.woff)
+  src: url(../fonts/ProximaNova-Regular.woff2)
+@font-face 
+  font-family: ProximaNova-Bold
+  src: url(../fonts/ProximaNova-Bold.woff)
+  src: url(../fonts/ProximaNova-Bold.woff2)
+@font-face 
+  font-family: ProximaNova-Extrabld
+  src: url(../fonts/ProximaNova-Extrabld.woff)
+  src: url(../fonts/ProximaNova-Extrabld.woff2)
+@font-face 
+  font-family: ProximaNova-T
+  src: url(../fonts/ProximaNovaT-Thin.woff)
+  src: url(../fonts/ProximaNovaT-Thin.woff2) 
+@font-face 
+  font-family: ProximaNova-Semi
+  src: url(../fonts/ProximaNova-Semibold.woff)
+  src: url(../fonts/ProximaNova-Semibold.woff2)
+
+  // font-style: normal
+  // font-weight: normal

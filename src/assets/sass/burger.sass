@@ -1,0 +1,44 @@
+.mobile-menu-btn 
+  // background-color: transparent
+  border: 0
+  cursor: pointer
+  float: left
+  height: 50px
+  outline: 0
+  position: relative
+  width: 50px
+  span 
+    left: 10px
+    top: 24px
+    &::before 
+      top: -8px
+    &::after 
+      bottom: -8px
+    &::before,
+    &::after 
+      content: ''
+  span,
+  span::before,
+  span::after 
+    display: block
+    background-color: #000446
+    height: 4px
+    position: absolute
+    transition: all .3s ease-in-out
+    width: 30px
+
+  &.active 
+    span 
+      background-color: transparent
+      &::before,
+      &::after 
+        background-color: #000446
+        top: 0
+      
+      &::before 
+        transform: rotate(45deg)
+      
+      &::after 
+        transform: rotate(-45deg)
+*,html:focus-visible
+  outline-color: transparent !important

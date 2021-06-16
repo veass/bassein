@@ -1,0 +1,213 @@
+// Стили 11
+.pdf
+  padding: 70px 0px 35px 0px
+  background: #f5f5f5
+  z-index: 0
+  @media screen and ( max-width: 991.98px )
+    padding: 0px 0px 30px 0px
+  .button--dashed
+    margin: 20px 0px 35px 0px
+    @media screen and ( max-width: 991.98px )
+      margin: 20px auto 35px auto
+  h2
+    text-align: left
+.pdf-wrap
+  h2
+    @media screen and ( max-width: 991.98px )
+      text-align: center
+  .main-info__card 
+    width: 60%
+    margin: 40px 0px 115px 0px
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+      margin: 20px 0px 20px 0px
+    .form
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      width: 100%
+      // justify-content: start
+      justify-content: space-between
+      >div:nth-child(1)
+        width: 50%
+        height: 80px
+        @media screen and ( max-width: 991.98px )
+          width: 100%
+        input
+          height: 80px !important
+      >div:nth-child(2)
+        width: 40%
+        height: 80px
+        @media screen and ( max-width: 991.98px )
+          width: 100%
+    .leftimg
+      margin: 15px 0px 15px 0px
+
+
+.book 
+  position: absolute
+  right: 0
+  top: -20%
+  z-index: -1
+  width: 50vw
+
+// Последний блок
+.calling
+  background: #f5f5f5
+  padding: 0px 0px 100px 0px
+  @media screen and ( max-width: 991.98px )
+    padding: 0px 0px 0px 0px
+  .leftimg
+    margin: 25px 0px 25px 0px
+    p
+      font-family: ProximaNova-Bold
+      font-size: 16px
+  h2
+    width: 50%
+    text-align: left
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+      text-align: center
+  .row
+    justify-content: space-evenly
+    padding: 0px 0px 30px 0px
+    > div
+      margin: 15px 0px 0px 0px
+      > div
+        height: 80px
+        @media screen and ( max-width: 991.98px )
+          height: auto
+  .form
+    width: 330px
+    div:nth-child(2)
+      height: 90px
+    div:nth-child(3)
+      height: 90px
+    .form-group
+      margin: 20px 0px 0px 0px
+  .imgright
+    width: 150px
+    height: 200px
+    object-fit: contain
+  .m0a
+    margin: 0 auto
+.calling-elems
+  padding: 15px
+  background: white
+  .calling-elem > .right
+    display: flex
+    padding: 40px 0px 0px 0px
+    width: 66%
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+      flex-direction: column
+      padding: 20px 0px 0px 0px
+    .left
+      div:nth-child(3)
+        p
+          font-family: ProximaNova-Extrabld
+          font-size: 18px
+      div:nth-child(4)
+        padding: 20px 0px 80px 0px
+        @media screen and ( max-width: 991.98px )
+          padding: 20px 0px 20px 0px
+        p
+          font-size: 23px
+      div:nth-child(1)
+        b
+          font-size: 18px
+      div:nth-child(2)
+        margin: 25px 0px 25px 0px
+      .whats-up
+        margin: 30px auto
+  .calling-elem > .left
+    width: 44%
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+.calling-elem-1, .calling-elem
+  flex-direction: column
+  display: flex
+  @media screen and ( min-width: 992px )
+    flex-direction: row
+.calling-elem-1:nth-child(2) > .right
+  background: url('../img/gdfg.jpg')
+.calling-elem-1:nth-child(3) > .right
+  background: url('../img/sss.jpg')
+.calling-elem-1:nth-child(4)
+  padding: 30px 45px
+  @media screen and ( max-width: 991.98px )
+    padding: 15px
+  >div
+    width: 45%
+    @media screen and ( max-width: 991.92px )
+      width: 100%
+  h2
+    width: auto
+  h2~p
+    @include adaptiv-font(20, 18)
+    @media screen and ( max-width: 991.92px )
+      text-align: center
+  h3
+    font-size: 19px
+  .button
+    width: 340px
+    height: 60px
+    margin: 40px 0px 0px 0px
+    @media screen and ( max-width: 991.92px )
+      margin: 40px auto 20px auto
+      width: 300px
+  >div:nth-child(2)
+    display: flex
+    flex-direction: row
+  ul>li>img
+    margin: 0px 10px 0px 0px
+.calling-elem-1:nth-child(5)
+  .button
+    width: 100%
+    height: 60px
+.calling-elem-1
+  .calling-wrap
+    margin: 40px 0px 0px 0px
+    img
+      width: 120px
+      height: 120px
+  .left
+    width: 60%
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+      text-align: center
+    h4
+      @include adaptiv-font(20, 16)
+    .main-info__card
+      >p:nth-child(2)
+        @include adaptiv-font(20, 16)
+        
+  >.right
+    width: 40%
+    background-size: cover
+    background-position: center
+    padding: 0px 0px 0px 0px
+    display: flex
+    align-items: flex-end
+    @media screen and ( max-width: 991.98px )
+      width: 100%
+    .button
+      width: 530px
+      height: 60px
+      margin-bottom: 80px
+      text-align: center
+      @media screen and ( max-width: 991.98px ) 
+        width: 300px
+        
+    .right
+      width: 100%
+      @media screen and ( max-width: 991.98px )
+        width: 0
+      // img
+      //   margin-top: -50%
+.klos
+  height: 60px
+.bs.activeb
+  background: #3f9bfa
+  span
+    color: white

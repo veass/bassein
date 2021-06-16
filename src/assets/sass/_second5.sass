@@ -1,0 +1,503 @@
+// Стили шестого блока 
+.work
+  padding: 00px 0px 50px 0px
+  @media screen and ( min-width: 992px)
+    padding: 80px 0px 140px 0px
+.work-menu 
+  display: flex
+  justify-content: space-between
+  margin: 70px 0px 50px 0px
+.work-ul
+  display: flex
+  justify-content: space-evenly
+  flex-wrap: wrap
+  width: 100%
+  li
+    background: #eee
+    font-size: 18px
+    margin: 15px 0px 0px 0px
+    font-family: ProximaNova-Bold
+    a
+      color: #aaa
+  li.active
+    background: #439cf9
+    a
+      color: $white
+.work-tile
+  width: 100%
+  &__elem
+    width: 25% 
+    height: 285px
+    padding: 10px
+    @media screen and ( max-width: 767px  )
+      width: 50%
+    img
+      height: 100%
+      width: 100%
+      object-fit: cover
+.work-tile ~ .button
+  width: 390px
+  height: 80px
+  margin-top: 50px
+  margin-left: auto
+  margin-right: auto
+  box-shadow: 0 7px 0 0 #3e80c5
+  a span
+    font-size: 18px
+    font-family: ProximaNova-Bold
+
+
+
+
+// Стили Восьмого блока
+.important 
+  // padding: 0px 0px 70px 0px
+  padding: 0px 0px 90px 0px
+  @media screen and ( max-width: 991.98px )
+    padding: 0px 0px 40px 0px
+  >div:first-child
+    margin-left: 12vw
+    @media screen and ( max-width: 991.98px )
+      margin-left: 0
+.left 
+  width: 45%
+  @media screen and ( max-width: 991.98px )
+    width: 100%
+  .button--dashed
+    height: 50px
+    width: 150px
+    font-family: ProximaNova-Bold
+    font-size: 20px
+    color: $bluetext
+    @media screen and ( max-width: 991.98px )
+      margin: 0 auto
+  h3
+    font-family: ProximaNova-Extrabld
+    margin: 50px 0px 25px 0px
+    @include adaptiv-font(43, 20)
+    @media screen and ( max-width: 991.98px )
+      margin: 30px 0px 10px 0px
+  h3 ~ p
+    @include adaptiv-font(20, 15)
+    padding-bottom: 20px !important
+    @media screen and ( min-width: 992px )
+      padding-bottom: 60px !important
+  p
+    @media screen and ( max-width: 991.98px )
+      margin: 0 auto !important
+      display: block
+  p:nth-child(2)
+    @media screen and ( max-width: 991.98px )
+      width: 60%
+  .vkyrse
+    img
+      @media screen and ( min-width: 992px )    
+        margin: 0 20px 0 0
+    >div
+      width: auto
+      margin: 40px 0 0 0
+      p
+        @media screen and ( max-width: 991.98px )
+          width: 60%
+    h4
+      @include adaptiv-font(29, 17)
+    p
+      @include adaptiv-font(20, 16)
+  .half
+    margin: 50px 0px 0px 0px
+    @media screen and ( max-width: 991.98px  )
+      width: 80%
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+      margin-top: 20px
+      align-items: center
+    > div
+      width: 315px
+      height: 80px
+      @media screen and ( max-width: 991.98px  )
+        width: 225px
+        height: 55px
+    p, span
+      font-family: ProximaNova-Bold
+    > div:nth-child(2)
+      @media screen and ( max-width: 991.98px  )
+        margin: 20px 0px 20px 0px
+      img
+        margin: 0px 25px 0px 0px
+.right
+  width: 50%
+  padding: 0px 0px 0px 80px
+  @media screen and ( max-width: 991.98px  )
+    width: 100%
+    padding: 0px 0px 0px 0px
+    display: flex
+    justify-content: center
+.owl-item.cloned.active.backdown
+  opacity: 0.4
+  padding: 50px
+  transsition: ease
+  opacity: 0.4
+  padding: 50px
+  transsition: ease
+
+    
+
+// Стили девятого облака
+.garanty
+  position: relative
+  background: url('../img/backgaranty.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center   
+  padding: 0px 0px 70px 0px
+  @media screen and ( max-width: 991.98px  )
+    background: url('../img/base.jpg')
+    padding: 0px 0px 35px 0px
+    background-size: cover
+    background-position: center
+.wrap-mid
+  margin-left: 15%
+  width: 60%
+  @media screen and ( max-width: 991.98px )
+    width: 100%
+    margin-left: 0%
+  .button--dashed
+    font-size: 20px
+    font-family: ProximaNova-Bold
+    color: $bluetext
+    width: 420px
+    height: 50px
+    margin: 0px auto 40px auto
+    @media screen and ( max-width: 991.98px )
+      width: 290px
+      text-align: center
+      height: 70px
+.garanty-elem
+  width: 80%
+  margin: 0px 0px 40px 0px
+  @media screen and ( max-width: 991.98px  )
+    margin: auto
+    width: 100%
+  >div
+    margin: 0px 0px 30px 0px
+  .vkyrse h4
+    @include adaptiv-font(29, 17)
+  .vkyrse h4 ~ p
+    @include adaptiv-font(20, 16)
+  .vkyrse > div
+    @media screen and ( max-width: 991.98px  )
+      // width: 100%
+      margin: 0 auto
+      margin: 20px auto 0px auto
+  .vkyrse > .littleimg
+    @media screen and ( max-width: 991.98px  )
+      width: 90px
+      height: 100px
+.sertificate-links
+  margin: 20px 0px 0px 0px
+  @include adaptiv-font(18, 15)
+  text-decoration: underline !important
+.bestservice-elems
+.bestservice-elem
+  position: relative
+  width: 50%
+  @media screen and ( max-width: 991.98px  )
+    width: 100%
+.box3
+  min-height: 380px
+.box3 > div:nth-child(1)
+  justify-content: flex-end
+  align-items: center
+  b
+    padding: 0px 0px 20px 0px
+  img
+    width: 200px
+.box3 > div:nth-child(2)
+  justify-content: flex-end
+  align-items: center
+  b
+    padding: 0px 0px 20px 0px
+  img
+    width: 200px
+.box3 > div:nth-child(3)
+  background: url('../img/sert4.png')
+  background-repeat: no-repeat
+  div
+    height: 50%
+    align-items: center
+    border-bottom: 2px solid white
+    span:nth-child(1)
+      font-size: 40px
+      font-family: ProximaNova-Extrabld
+      // font-family: ProximaNova-Bold
+    span:nth-child(2)
+      font-size: 20px
+    span:nth-child(3)
+      font-size: 20px
+    div:nth-child(1)
+      border-bottom: 1px solid $white !important
+#chelik
+  position: absolute
+  bottom: 0
+  right: 1
+#list
+  position: absolute
+  bottom: 0
+  right: 1
+  @media screen and ( max-width: 1919px )
+    display: none
+.cheliks
+  display: none
+  @media screen and ( max-width: 400px )
+    display: block
+    img
+      width: 100vw
+      max-width: none
+      margin: 30px 0 0 -15px
+
+// Конец девятого
+
+// Cили 10
+.bestservice 
+  position: relative
+  background: url('../img/fdgh.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 0px 0px 50px 0px
+  @media screen and ( max-width: 991.98px  )
+    background-size: cover
+    background-position: center
+    background: white
+    padding: 0px 0px 0px 0px
+  h2
+    padding: 30px 0px 60px 0px
+  .button
+    height: 70px
+    margin: 20px 0px 0px 0px
+    box-shadow: 0 7px 0 0 #3e80c5
+  .form-group
+    margin: 20px 0px 0px 0px
+  .container .button--dashed 
+    font-family: ProximaNova-Bold
+.bestservice-elems 
+.bestservice-elem 
+  .main-info__down
+    padding: 5px
+    background: white
+  .main-info__card
+    border: 2px dashed gray
+  &:nth-child(2)
+    margin-left: 10%
+    background: #ffffffbf
+    padding: 0 15px
+    .main-info__dowm 
+      > div > p:nth-child(2)
+        width: 80%
+    @media screen and ( max-width: 991.98px  )
+      background: transparent
+      margin-left: 0%
+  .form
+    width: 60%
+    @media screen and ( max-width: 991.98px  )
+      width: 100%
+.doublebutton 
+  margin: 0px 0px 40px 0px
+  span:nth-child(1)
+    font-family: ProximaNova-Bold
+  @media screen and ( max-width: 991.98px  )
+    margin: 40px 0px 40px 0px
+
+.rospis
+  margin: 30px 0px 20px 0px
+  div:nth-child(2)
+    width: 100px
+.telphanes > img
+  position: absolute
+  right: 0
+  bottom: 0
+  width: 250px
+  height: 250px
+  z-index: 0
+  padding: 10px
+.chl
+  width: 50%
+  top: 0
+  position: absolute
+  left: 0
+
+// Стили 11 блока
+.aboutus
+  background: url(../img/section5.jpg)
+  z-index: 2
+  .button--dashed
+    margin: 50px auto
+  h2
+  .container
+    @media screen and ( max-width: 991.98px  )
+      padding: 0px 0px 0px 0px
+.team-back
+  position: relative
+  justify-content: space-evenly
+  margin: 220px 0px 0px 0px
+  @media screen and ( max-width: 991.98px  )
+    margin: 0px 0px 0px 0px
+.team-back .flex-wrap div:nth-child(3) img
+  transform: translateY(40px)
+.needpadding
+  padding: 70px
+  background: url('../img/fds.png')
+  // margin: -200px 0px 0px 0px
+  z-index: 10
+  background-position: top
+  padding: 20px 0
+  justify-content: space-evenly
+  align-items: baseline
+  @media screen and ( max-width: 991.98px  )
+    padding: 20px
+  @media screen and ( min-width: 992px  )
+    justify-content: space-between
+  > div 
+    > div > img
+      padding: 36px 0px 18px 0px
+  > div > div
+    align-items: center
+  .order-1
+    padding: 0px 0px 0px 0px
+    @media (max-width: 992px)
+      img
+        width: 70px
+    @media (min-width: 992px)
+      img
+        width: 140px
+  .order-2
+    padding: 0px 0px 0px 0px
+    @media (max-width: 992px)
+      img
+        width: 90px
+    @media (min-width: 992px)
+      img
+        width: 170px
+  .order-3
+    padding: 0px 0px 0px 0px
+    @media (max-width: 992px)
+      img
+        width: 60px
+    @media (min-width: 992px)
+      img
+        width: 90px
+  .order-4
+    @media (max-width: 992px)
+      img
+        width: 60px
+    @media (min-width: 992px)
+      img
+        width: 100px
+  p
+    font-family: 'ProximaNova-Bold'
+    @include adaptiv-font(18, 12)
+  span
+    font-family: 'ProximaNova-Extrabld'
+    @include adaptiv-font(36, 16)
+.aboutus__elem 
+  display: flex
+  justify-content: flex-end
+  flex-direction: column
+  align-items: center
+  padding: 0 0 50px 0
+  height: 300px
+  .imgabsolute
+    padding: 10px
+    z-index: 1
+  .info-elem
+    width: 80%
+    padding: 2%
+    background: #00000085
+    z-index: 2
+    min-height: 115px
+  p:nth-child(1)
+    font-family: ProximaNova-Bold
+    font-size: 18px
+  p
+    color: $white
+    // font-size: 13px
+    font-size: 15px
+.team
+  width: 25%
+  @media screen and ( max-width: 991.98px  )
+    width: 100%
+.aboutus-card
+  width: 280px
+  padding: 5px
+  @media screen and ( max-width: 991.98px  )
+    width: 95%
+    margin: 0 auto
+.aboutus-img
+  position: absolute
+  bottom: 30%
+  right: 0
+  width: 75%
+  z-index: -1
+  width: 70%
+  @media screen and ( max-width: 991.98px  )
+    position: static
+    width: auto
+    height: auto
+  img
+    @media screen and ( max-width: 991.98px  )
+      object-fit: contain
+      height: auto
+// конец десятого
+
+
+// правки.......................................................
+@media (min-width: 992px) and (max-width: 1200px)
+  .team-back
+    margin-top: 30px
+  .aboutus-img
+    bottom: 40%
+@media (min-width: 1200px) and (max-width: 1700px)
+  .team-back
+    margin-top: 100px
+  .aboutus-img
+    bottom: 40%
+@media (min-width: 1700px)
+  .team-back
+    margin-top: 200px
+  .aboutus-img
+    bottom: 30%
+
+//Мобилка
+@media (max-width: 992px)
+  .needpadding
+    background-size: contain
+
+@media (max-width: 992px)
+  .aboutus-img
+    top: 20%
+
+.aboutus__elem .imgabsolute
+  border-radius: 20px
+.team-back
+  margin-bottom: 20px
+  border-radius: 10px
+.needpadding
+  border-radius: 10px
+.calling .m0a
+  margin-left: 40px
+  align-self: center
+.right .right
+  align-self: flex-end
+.footer .header-logo
+  transform: translateY(-15px)
+.calling-elems .calling-elem > .right .left .whats-up
+  box-shadow: 0 10px 40px 0 #07060633
+.kybok
+  position: absolute
+  top: -4%
+  right: 0
+  width: 60px
+.owl-carousel-second .owl-item img
+  @media screen and ( max-width: 991.98px )
+    width: 300px !important
+    
